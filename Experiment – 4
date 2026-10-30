@@ -1,65 +1,66 @@
+#Creating Dictionary
 student={
 "Roll":101,
-"Name":"Rahul",
+"Name":"Sriya",
 "Branch":"MCA",
 "CGPA":8.9
 }
 print(student)
 
-
+#Accessing Dictionary Elements
 student={
 "Roll":101,
-"Name":"Rahul",
+"Name":"Sriya",
 "CGPA":8.8
 }
 print(student["Name"])
 print(student["CGPA"])
 
-
+#Adding New Elements
 student={
 "Roll":101,
-"Name":"Rahul"
+"Name":"Sriya"
 }
 student["Branch"]="MCA"
 student["CGPA"]=8.7
 print(student)
 
-
+#Adding New Elements
 student={
-"Name":"Rahul",
+"Name":"Sriya",
 "CGPA":8.4
 }
 student["CGPA"]=9.1
 print(student)
 
-
+#Delete an Element
 student={
 "Roll":101,
-"Name":"Rahul",
+"Name":"Sriya",
 "CGPA":8.9
 }
 del student["CGPA"]
 print(student)
 
-
+#Dictionary Traversal
 student={
 "Roll":101,
-"Name":"Rahul",
+"Name":"Sriya",
 "CGPA":8.8
 }
 for key,value in student.items():
     print(key,"=",value)
 
-
+#Employee Database
 employee={
-101:["Rahul",45000],
-102:["Kiran",55000],
-103:["Anil",60000]
+101:["Sriya",45000],
+102:["Anu",55000],
+103:["Vidya",60000]
 }
 for id,data in employee.items():
     print(id,data)
 
-
+#Student Marks Database
 students={
 "Rahul":89,
 "Ravi":92,
@@ -70,7 +71,7 @@ highest=max(students,key=students.get)
 print("Topper =",highest)
 print("Marks =",students[highest])
 
-
+#Inventory Management
 inventory={
 "Laptop":25,
 "Mouse":80,
@@ -82,7 +83,7 @@ if item in inventory:
 else:
     print("Item Not Available")
 
-
+#Nested Dictionary
 students={
 101:{
 "Name":"Rahul",
@@ -96,7 +97,7 @@ students={
 print(students[101]["Name"])
 print(students[102]["CGPA"])
 
-
+#Dictionary Comprehension
 numbers={x:x*x for x in range(1,11)}
   print(numbers)
  
